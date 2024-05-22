@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>TraslaWeb</title>
+    <link rel="shortcut icon" href="/assets/images/ICONO TRASLAWEB.svg" type="image/svg+xml">
+    <meta name="description" content="Repositorio de todo lo malo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js"></script>
+    <link rel="stylesheet" href="stylebase.css">
+    <script src="importer.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header" data-header>
+    
+        <div class="contenedor">
+    
+          <a href="index.html">
+            <h1  class="logo">TraslaWeb</h1>
+          </a>
+    
+          <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+            <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+            <ion-icon name="close-outline" class="close-icon"></ion-icon>
+          </button>
+    
+          <nav class="navbar container">
+            <ul class="navbar-list">
+    
+    
+              <li>
+                <a href="Equipo.html" class="navbar-link" data-nav-link>Equipo</a>
+              </li>
+    
+              <li>
+                <a href="Catalogo.html" class="navbar-link" data-nav-link>Prácticas</a>
+              </li>
+    
+              <li>
+                <a href="Base.html" class="navbar-link" data-nav-link>Patrones</a>
+              </li>
+    
+              <li>
+                <a href="Ojopiojo.html" class="navbar-link" data-nav-link>Ojo Piojo</a>
+              </li>
+    
+              <li>
+                <a href="comunidad.html" class="navbar-link" data-nav-link>Opina!</a>
+              </li>
+    
+            </ul>
+          </nav>
+    
+        </div>
+    
+      </header>
+
+<br>
+<br>
+<br>
+<br>
+<main>
+      <div id="page2">
+        <div id="moving-text">
+         <div class="con">
+             <h1>NUESTROS</h1>
+             <div id="gola"></div>
+             <h1>PATRONES</h1>
+             <div id="gola"></div>
+             <h1>REVELADOS</h1>
+             <div id="gola"></div>
+         </div>
+         <div class="con">
+             <h1>NUESTROS</h1>
+             <div id="gola"></div>
+             <h1>PATRONES</h1>
+             <div id="gola"></div>
+             <h1>REVELADOS</h1>
+             <div id="gola"></div>
+         </div>
+         <div class="con">
+             <h1>NUESTROS</h1>
+             <div id="gola"></div>
+             <h1>PATRONES</h1>
+             <div id="gola"></div>
+             <h1>REVELADOS</h1>
+             <div id="gola"></div>
+         </div>
+     </div>
+     <div id="hero-shape">
+      <div id="hero-2"></div>
+      <div id="hero-3"></div>
+  </div>
+   </div>
+
+      <h2 class="h2 section-title">Nuestros patrones revelados</h2>
+<br>
+      <p class="section-text">
+       Entérate de lo ultimo en actualidad sobre patrones e interacciones de la web que no solemos reconocer
+      </p>
+      <br>
+      <br>
+
+
+</main>
+      
+
+      <footer>
+        <nav>
+            <div class="btn-group">
+                <li><a href="" id="view-all" class="btn btn-primary blue">Ver todos</a></li> 
+              </div>
+        </nav>
+        </nav>
+        <div id="footerSelect"></div>
+    </footer> 
+    <div id='p5_loading'>Cargando los casos de estudio de Casiopea</div>
+    <h2 id="title"></h2>
+    <main id="main" class="container"></main>
+    <article id="single"></article>
+    <br>
+    <nav>
+        <div class="btn-group">
+            <li><a href="" id="view-all" class="btn btn-primary blue">Ver todos</a></li> 
+          </div>
+    </nav
+    <br>
+    <br>
+    <br>
+
+
+   
+   
+
+  
+
+    
+
+<br>
+    <footer class="footer">
+        <div class="container">
+    
+          
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="footer-link">Terms & Condition</a>
+            </li>
+    
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+          </ul>
+    
+        </div>
+      </footer>
+</body>
+<script>
+    // Añadir el evento después de que el documento esté completamente cargado
+    document.addEventListener("DOMContentLoaded", function () {
+        const viewAllLink = document.getElementById('view-all');
+        if (viewAllLink) {
+            viewAllLink.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevenir la acción por defecto del enlace
+                displayAll(); // Llamar a la función que muestra todos los casos
+            });
+        }
+    });
+</script>
+
+<script src="./assets/js/vanta ojopiojo.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#bg",
+      color: 0xCDB28C,
+      backgroundColor: 0x03080c,
+      points: 11,
+      spacing: 19,
+      maxDistance: 20,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false
+    });
+  </script>
+
+<script src="scriptbase.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
